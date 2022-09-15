@@ -68,7 +68,7 @@ export class News extends Component {
       <div className="container my-3">
         <h2 className="text-center" style={{margin:'35px 0px'}}>NewsMonkey || Top Headlines || {this.capitalizeFirstLetter(this.props.category)}</h2>
 
-        {/* {this.state.loading && <Spinner />} */}
+        {this.state.loading && <Spinner />}
         
         <div className="row">
 
