@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 // import PropTypes from "prop-types";
 
 import {
   Link,
 } from "react-router-dom";
 
-export default class Navbar extends Component {
-  render() {
+const Navbar = ()=>{
+  
     return (
       <div>
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
@@ -31,7 +31,7 @@ export default class Navbar extends Component {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link" aria-current="page" to="/">
-                    Home
+                    General
                   </Link>
                 </li>
                 
@@ -45,11 +45,11 @@ export default class Navbar extends Component {
                     Entertainment
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/general">
                     General
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link" to="/health">
                     Health
@@ -77,5 +77,7 @@ export default class Navbar extends Component {
         </nav>
       </div>
     );
-  }
+  
 }
+
+export default Navbar
